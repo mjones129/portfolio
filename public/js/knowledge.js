@@ -1,73 +1,100 @@
-Chart.pie.Defaults = {
-    labelFontFamily : "Arial",
-    labelFontStyle : "normal",
-    labelFontSize : 24,
-    labelFontColor : "#666"
+
+
+    window.onload = function onLoad() {
+ 
+
+var bar = new ProgressBar.Circle(".html-progress", {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 3000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 1 },
+  to: { color: '#fbff21', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value + "%");
+    }
+
+  }
+});
+bar.text.style.fontSize = '35px';
+
+bar.animate(1.0); //Number from 0.o to 1.0
+
+var bar = new ProgressBar.Circle(".css-progress", {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 3000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 1 },
+  to: { color: '#20b4ff', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value + "%");
+    }
+
+  }
+});
+bar.text.style.fontSize = '35px';
+
+bar.animate(.95); //Number from 0.o to 1.0
+
+var bar = new ProgressBar.Circle(".js-progress", {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 3000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 1 },
+  to: { color: '#6df92c', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value + "%");
+    }
+
+  }
+});
+bar.text.style.fontSize = '35px';
+
+bar.animate(.75); //Number from 0.o to 1.0
 };
 
- var drawPieSegments = function(drawPieSegments) {
-    ctx.fillText(data[0].value + "%", width/2 - 20, width/2, 200);
-}
 
-const HTMLchart = document.getElementById("htmlChart");
-
-let lineChart = new Chart(HTMLchart, {
-    type: 'doughnut',
-    data: {
-        labels: ["HTML", ""],
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: [
-                '#FFA500',
-                'rgba(156, 25, 237, 0)'
-                ],
-            borderColor: 'rgba(255, 99, 132, 0)',
-            data: [100, 0]
-            }]
-        },
-    options: {
-        cutoutPercentage: 85
-    }
-});
-
-const CSSchart = document.getElementById("cssChart");
-
-let cssChart = new Chart(CSSchart, {
-    type: 'pie',
-    data: {
-        labels: ["CSS", ""],
-        datasets: [{
-            label: "CSS Knowledge",
-            backgroundColor: [
-                '#5592f4',
-                'rgba(0,0,0,0)'
-                ],
-            borderColor: 'rgba(0,0,0,0)',
-            data: [90, 10]
-        }]
-    },
-    options: {
-        cutoutPercentage: 85
-    }
-})
-
-const JSChart = document.getElementById("jsChart");
-
-let jsChart = new Chart(JSChart, {
-    type: 'pie',
-    data: {
-        labels: ["Javascript", ""],
-        datasets: [{
-            label: "Javascript Knowledge",
-            backgroundColor: [
-                '#ff1616',
-                'rgba(0,0,0,0)'
-                ],
-            borderColor: 'rgba(0,0,0,0)',
-            data: [85, 15]
-        }]
-    },
-    options: {
-        cutoutPercentage: 85
-    }
-})

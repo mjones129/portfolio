@@ -1,5 +1,7 @@
 var express = require("express");
 var app = express();
+var ProgressBar = require("progressbar.js");
+
 
 app.use(express.static('public'));
 app.set("view engine", "ejs");

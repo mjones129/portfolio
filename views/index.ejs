@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Matt Jones</title>
+    
+    <!-- jQuery CDN-->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    
     <!--bootstrapp css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!--vizuly css-->
-    <link rel="stylesheet" href="stylesheets/vizuly.css">
-    <link rel="stylesheet" href="stylesheets/vizuly_radial_progress.css">
+    
+    
     <!--custom css-->
     <link rel="stylesheet" href="stylesheets/main.css">
-    <!--<script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>-->
-    <!--D3.js-->
-    <script src="lib/d3.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    
+    <!--progressbar.js-->
+    <script src="js/progressbar.min.js"></script>
 </head>
 <body>
-    <!--<div class="container">-->
-    <!--    <h1 class="text-center">Matt Jones</h1>-->
-    <!--    <div class="row">-->
-    <!--        <div class="col-lg-4 col-sm-12">-->
-    <!--            <canvas id="htmlChart" width="400" height="400"></canvas>-->
-    <!--        </div>-->
-    <!--        <div class="col-lg-4 col-sm-12">-->
-    <!--            <canvas id="cssChart" width="400" height="400"></canvas>-->
-    <!--        </div>-->
-    <!--        <div class="col-lg-4 col-sm-12">-->
-    <!--            <canvas id="jsChart" width="400" height="400"></canvas>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
     
     
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <h1>Matt Jones</h1>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="html-progress">HTML</div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="css-progress">CSS</div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="js-progress">JavaScript</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>-->
     <script type="text/javascript" src="js/knowledge.js"></script>
 </body>
 </html>
