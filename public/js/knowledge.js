@@ -1,3 +1,14 @@
+Chart.pie.Defaults = {
+    labelFontFamily : "Arial",
+    labelFontStyle : "normal",
+    labelFontSize : 24,
+    labelFontColor : "#666"
+};
+
+ var drawPieSegments = function(drawPieSegments) {
+    ctx.fillText(data[0].value + "%", width/2 - 20, width/2, 200);
+}
+
 const HTMLchart = document.getElementById("htmlChart");
 
 let lineChart = new Chart(HTMLchart, {
