@@ -1,11 +1,14 @@
+/*RADIAL PROGRESS BARS BEGIN*/
 .container-fluid {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
     text-align: center;
 }
 
-.html-progress {
-    width: 300px;
-    height: 300px;
+.html-progress .css-progress .js-progress .node-progress .express-progress .mongo-progress{
+    max-width: 100px;
+    height: 100%;
     background-color: transparent;
     margin: 20px auto;
     margin-top: 50px;
@@ -15,39 +18,46 @@
 
 .html-progress > svg {
     display: inline;
-}
-
-
-.css-progress {
-    width: 300px;
-    height: 300px;
-    background-color: transparent;
-    margin: 20px auto;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 35px;
+    max-width: 150px;
 }
 
 .css-progress > svg {
     display: inline;
-}
-
-.js-progress {
-    width: 300px;
-    height: 300px;
-    background-color: transparent;
-    margin: 20px auto;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 35px;
+    max-width: 150px;
 }
 
 .js-progress > svg {
     display: inline;
+    max-width: 150px;
 }
+
+.node-progress > svg {
+    display: inline;
+    max-width: 150px;
+}
+
+.express-progress > svg {
+    display: inline;
+    max-width: 150px;
+}
+
+.mongo-progress > svg {
+    display: inline;
+    max-width: 150px;
+}
+
+/*RADIAL PROGRESS BARS END*/
 
 body {
     background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 .logo {
@@ -57,24 +67,45 @@ body {
     margin-right: auto;
 }
 
+
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 35px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.collapse {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+
+
+#center {
+    text-align: center;
+    margin: 0 auto;
 }
 
-.wdd {
-    float: right;
-    margin-top: 55px;
-    left: 50%;
-    transform: translateX(-74%) translateY(50%);
+
+
+.navbar-toggler {
+  margin-top: 15px;
+  float: right;
+}
+
+.skills {
+    /*background-color: #f9f9f9;*/
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.background {
+    text-align: left;
+    padding-top: 100px;
+}
+.skill-font {
+    font-size: 30px;
+}
+
+.form {
+    padding-bottom: 150px;
+    padding-top: 100px;
 }

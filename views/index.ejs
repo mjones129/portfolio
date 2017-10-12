@@ -25,31 +25,66 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-xl navbar-light bg-light d-flex justify-content-between">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light d-flex justify-content-between" role="navigation">
         <div class="collapse navbar-collapse">
-            <a class="navbar-brand" href="#">Matthew Christopher Jones</a>
+            <a class="navbar-brand" id="center" href="#">Matthew Christopher Jones</a>
         </div>
         <span class="h1" class="navbar-brand mb-0"><img class="logo" src="/img/MCJ-logo.svg"></span>
         <div class="collapse navbar-collapse">
-            <a class="navbar-brand" href="#">web designer/developer</a>        
+            <a class="navbar-brand" id="center" href="#">web designer/developer</a>        
         </div>
     </nav>
     
-    
-    
-    <div class="container-fluid">
-        
+    <div class="container background">
+        <h1>background:</h1>
+        <p>My name is Matt and I'm a web developer based in sunny Tampa, FL. I have over
+          10 years of experience working in the film, graphic design, and animation industries.
+          Looking to create a uniquely amazing website? Let's connect!</p>
+    </div>
+    <div class="container">
+    <div class="container skills">
+        <h1>skills include: </h1>
         <div class="row">
             <div class="col-lg-4 col-sm-12">
-                <div class="html-progress">HTML</div>
+                <div class="html-progress skill-font">HTML</div>
             </div>
             <div class="col-lg-4 col-sm-12">
-                <div class="css-progress">CSS</div>
+                <div class="css-progress skill-font">CSS</div>
             </div>
             <div class="col-lg-4 col-sm-12">
-                <div class="js-progress">JavaScript</div>
+                <div class="js-progress skill-font">JavaScript</div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="node-progress skill-font">Node.js</div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="express-progress skill-font">Express.js</div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="mongo-progress skill-font">MongoDB</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container form">
+        <h1>let's get in touch:</h1>
+    <form action="mailto:contact@matthewchristopherjones.com" method: "POST" enctype="text/plain">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
+            </div>
+        <div class="col">
+                <input type="email" class="form-control" placeholder="you@example.com">
+        </div>
+        </div>
+        <div clas="row">
+            <input type="textarea" class="form-control" placeholder="message">
+            <input type="submit" value="send" class="btn btn-lg btn-primary">
+        </div>
+    </form>    
+    </div>
     </div>
     
     
