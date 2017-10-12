@@ -72,15 +72,20 @@
         <h1>let's get in touch:</h1>
     <form action="mailto:contact@matthewchristopherjones.com" method: "POST" enctype="text/plain">
         <div class="row">
+            <div class="form-group">
             <div class="col">
+                <label>first name</label>
                 <input type="text" class="form-control" placeholder="First name">
             </div>
         <div class="col">
+                <label>email</label>
                 <input type="email" class="form-control" placeholder="you@example.com">
         </div>
         </div>
+        </div>
         <div clas="row">
-            <input type="textarea" class="form-control" placeholder="message">
+            <label>how can I help?</label>
+            <textarea class="form-control" rows="3" placeholder="message"></textarea>
             <input type="submit" value="send" class="btn btn-lg btn-primary">
         </div>
     </form>    

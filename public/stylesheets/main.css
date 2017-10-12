@@ -17,33 +17,39 @@
 }
 
 .html-progress > svg {
-    display: inline;
+    display: block;
     max-width: 150px;
+    margin: 0 auto;
 }
 
 .css-progress > svg {
-    display: inline;
+    display: block;
     max-width: 150px;
+    margin: 0 auto;
 }
 
 .js-progress > svg {
-    display: inline;
+    display: block;
     max-width: 150px;
+    margin: 0 auto;
 }
 
 .node-progress > svg {
-    display: inline;
+    display: block;
     max-width: 150px;
+    margin: 0 auto;
 }
 
 .express-progress > svg {
-    display: inline;
+    display: block;
     max-width: 150px;
+    margin: 0 auto;
 }
 
 .mongo-progress > svg {
-    display: inline;
+    display: block;
     max-width: 150px;
+    margin: 0 auto;
 }
 
 /*RADIAL PROGRESS BARS END*/
@@ -58,6 +64,7 @@ body {
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    padding-bottom: 50px;
 }
 
 .logo {
@@ -92,8 +99,8 @@ h1 {
 
 .skills {
     /*background-color: #f9f9f9;*/
-    padding-left: 50px;
-    padding-right: 50px;
+    /*padding-left: 50px;*/
+    /*padding-right: 50px;*/
     padding-top: 100px;
 }
 
